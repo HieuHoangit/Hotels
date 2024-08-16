@@ -2,7 +2,8 @@ const express = require('express');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 3000;
+require('dotenv').config();
+const port = process.env.PORT;
 
 // Cấu hình Express
 app.set('view engine', 'ejs');
